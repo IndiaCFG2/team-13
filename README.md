@@ -14,5 +14,6 @@ Hoping for a good competiton ahead.
 
 Hi guys, I am Arpit Saini
 College: Punjab Engineering College, Chandigarh
+Branch: ECE
 email: arpit.saini0005@gmail.com
 Phone: 9877479110
