@@ -12,7 +12,7 @@ email-id: turkaranurag@gmail.com
 Phone: 9834917561
 Hoping for a good competiton ahead.
 
-Hi guys, I'am Arpit Saini
+Hi guys, I am Arpit Saini
 College: Punjab Engineering College, Chandigarh
 email: arpit.saini0005@gmail.com
 Phone: 9877479110
