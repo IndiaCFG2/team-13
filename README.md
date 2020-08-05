@@ -6,6 +6,7 @@ Mobile no:9449713707
 As soon as you get the invite of JPMC accept it and send in your details here. So that we can connect and get to know about each other.
 
 Hi guys,I am Anurag Turkar
+College: VNIT, Nagpur
 Branch: CSE
 email-id: turkaranurag@gmail.com
 Phone: 9834917561
