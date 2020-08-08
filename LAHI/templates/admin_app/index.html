@@ -1,0 +1,7 @@
+{% extends "admin_app/base.html" %} {% block header_block %}
+
+<div class="jumbotron">
+    {% csrf_token %} {{ user_form.as_p }}
+</div>
+
+{% endblock %}
