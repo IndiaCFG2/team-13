@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 from admin_app import views
+from teacher_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('admin_app/', include('admin_app.urls')),
+    path('teacher_app/', include('teacher_app.urls')),
 ]

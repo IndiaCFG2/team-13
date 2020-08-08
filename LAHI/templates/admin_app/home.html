@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+
+        <title>Lend A Hand</title>
+        <link rel="stylesheet" href="{% static "css/home.css" %}" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="http://www.lend-a-hand-india.org/"
+                >About Us</a
+            >
+        </nav>
+        <div id="container">
+            <button type="button" class="btn">
+                <a href="admin.html">Admin Login</a>
+            </button>
+            <br />
+            <button type="button" class="btn">
+                <a href="">Teacher Login</a>
+            </button>
+            <br />
+            <button type="button" class="btn">
+                <a href="">Student Login</a>
+            </button>
+        </div>
+    </body>
+</html>

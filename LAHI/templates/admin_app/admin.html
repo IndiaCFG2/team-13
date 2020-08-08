@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="{% static "css/admin.css"
+        %}" />
+        <title>Admin Page</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="home.html">Home</a>
+        </nav>
+        <!-- ///////////////////////////////////////////////////////////// -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'students')">
+                Admin
+            </button>
+            <button
+                class="tablinks"
+                onclick="openCity(event, 'teachers')"
+                id="defaultOpen"
+            >
+                Teachers
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'students')">
+                Students
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'school')">
+                School
+            </button>
+        </div>
+
+        <!-- <div id="teachers" class="tabcontent">
+        <h3>HEADING teacher</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque voluptatem officia, debitis eligendi at totam sed vero natus nobis consectetur ab delectus culpa unde nihil, quae enim incidunt animi, a sit eius. Nulla ducimus mollitia
+            eligendi consequuntur ab ratione autem eius excepturi iure! Tempora possimus beatae, labore explicabo error quam voluptates maiores deserunt similique voluptatibus tenetur aperiam a provident rem, odio ut adipisci quae blanditiis magni eius!
+            Libero, enim! Necessitatibus expedita distinctio repellendus eius, id suscipit ipsam doloribus facere perferendis sequi minima dignissimos sed hic ad consequuntur ipsum repudiandae optio tenetur voluptatem saepe! Unde, iusto! Sed modi quis
+            esse.
+        </p>
+    </div>
+
+    <div id="students" class="tabcontent">
+
+        <h3>HEADING students</h3>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis cumque repellat non ex eligendi incidunt natus consequatur dolor cupiditate nesciunt.
+        </p>
+    </div>
+
+    <div id="school" class="tabcontent">
+        <h3>HEADING school</h3>
+        <p>
+            lorem80
+        </p>
+    </div> -->
+
+        <!-- <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script> -->
+    </body>
+</html>

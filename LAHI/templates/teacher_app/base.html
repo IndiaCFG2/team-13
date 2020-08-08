@@ -19,19 +19,21 @@
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="navbar-link" href="{% url 'admin:index' %}"
-                            >Admin</a
+                        <a
+                            class="navbar-link"
+                            href="{% url 'teacher_app:register' %}"
+                            >Register</a
                         >
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="">Student</a>
                     </li>
                     <li>
                         <a
                             class="navbar-link"
-                            href="{% url 'teacher_app:index' %}"
-                            >Teacher</a
+                            href="{% url 'teacher_app:login' %}"
+                            >Login</a
                         >
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="">Teach</a>
                     </li>
                 </ul>
             </div>
