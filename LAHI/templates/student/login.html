@@ -2,7 +2,7 @@
 
 <div class="jumbotron" style="text-align: center; border-radius: 20px; margin-left: 300px; margin-right: 300px;">
     <h1 style="text-align: center">Please Login</h1>
-    <form action="{% url 'teacher_app:login' %}" method="post" style="text-align: center; margin-left: 50px">
+    <form action="{% url 'student:login' %}" method="post" style="text-align: center; margin-left: 50px">
         {% csrf_token %}
         <label style="margin-top: 50px" for="username">Username:</label>
         <input  placeholder="Enter Username" />

@@ -1,0 +1,17 @@
+{% extends 'teacher_app/base.html' %} {% load static %} {% block body_block %}
+
+<div class="jumbotron" style="text-align: center; border-radius: 20px; margin-left: 300px; margin-right: 300px;">
+    <h1 style="text-align: center">Please Login</h1>
+    <hr>
+    <form action="{% url 'teacher_app:link' %}" method="post" style="text-align: center; margin-left: 50px">
+        {% csrf_token %}
+        <label style="margin-top: 50px" for="link_url">Paste Link:</label>
+        <input  placeholder="enter url" />
+        
+        <div></div>
+        <input style="text-align: center; margin-top: 10px" class="btn btn-primary" type="submit" name="" value="send" 
+        onclick="content/" />
+    </form>
+</div>
+
+{% endblock %}
