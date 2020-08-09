@@ -1,0 +1,13 @@
+.navbar {
+    background-color: #474343;
+    margin-bottom: 0;
+}
+
+.background {
+    background-image: url(../images/bg.png);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+    height: 880px;
+    background-color: rgba(169,170,170,1);
+}

@@ -8,8 +8,8 @@
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         />
-        <link rel="stylesheet" href="{% static "css/teacher.css" %}" />
-        <title>Teacher</title>
+        <link rel="stylesheet" href="{% static "css/base.css" %}" />
+        <title>Base</title>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-static-top">
@@ -21,30 +21,28 @@
                     <li>
                         <a
                             class="navbar-link"
-                            href="{% url 'teacher_app:register' %}"
+                            href="{% url 'student:register' %}"
                             >Register</a
                         >
                     </li>
                     <li>
                         <a
                             class="navbar-link"
-                            href="{% url 'teacher_app:login' %}"
+                            href="{% url 'student:login' %}"
                             >Login</a
                         >
                     </li>
                     <li>
-                        <a class="navbar-link" href="">Teach</a>
+                        <a class="navbar-link" href="{% url 'student:review' %}">feedback</a>
                     </li>
                     <li>
-                        <a class="navbar-link" href="{% url 'admin_app:index' %}">Home</a>
+                        <a class="navbar-link" href="{% url 'student:get_content' %}">contents</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        
-        <div class="background">
-            {% block body_block %} 
-            {% endblock %}
-        </div>
+        <h1>Hello</h1>
+        {% block body_block %} {% endblock %}
+        <div></div>
     </body>
 </html>

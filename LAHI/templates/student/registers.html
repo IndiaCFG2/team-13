@@ -1,12 +1,12 @@
-{% extends 'teacher_app/base.html' %} {% load static %} {% block body_block %}
+{% extends 'student_app/base.html' %} {% load static %} {% block body_block %}
 
-<div class="jumbotron" style="text-align: center; border-radius: 20px; margin-left: 300px; 
-    margin-right: 300px; margin-top: 0; padding: 30px;">
+<div class="jumbotron" style="text-align: center; border-radius: 20px; margin-left: 300px; margin-right: 300px;">
     {% if registered %}
     <h1>Thank you for registring</h1>
     {% else %}
     <h1>Register Here</h1>
-    <hr>
+    <h3>Fill out the form</h3>
+
     <form method="post" style="text-align: left; margin-left: 50px">
         {% csrf_token %} {{ user_form.as_p }} {{ profile_form.as_p }}
         <input type="submit" name="" value="Register" class="btn btn-primary" />

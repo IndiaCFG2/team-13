@@ -1,43 +1,151 @@
-<!DOCTYPE html>
-{% load static %}
+<!DOCTYPE html> {% load static %}
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        />
-        <link rel="stylesheet" href="{% static "css/base.css" %}" />
-        <title>Base</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <p class="navbar-brand">LAHI</p>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="navbar-link" href="{% url 'admin:index' %}"
-                            >Admin</a
-                        >
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="">Student</a>
-                    </li>
-                    <li>
-                        <a
-                            class="navbar-link"
-                            href="{% url 'teacher_app:index' %}"
-                            >Teacher</a
-                        >
-                    </li>
-                </ul>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{% static "css/base.css" %}" />
+
+ <!--    <link rel="stylesheet" type="text/css" href="base.css"> -->
+
+    <title>Base</title>
+</head>
+
+<body>
+    <div class="parallax">
+        <h1 class="hero_text">Lend A Hand India</h1>
+
+    </div>
+    <nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0;">
+        <div class="container">
+            <div class="navbar-header">
+                <p class="navbar-brand"><b style="color: #fff; font-family: sans-serif;">Teaching Platform</b></p>
             </div>
-        </nav>
-        <h1>Hello</h1>
-        {% block body_block %} {% endblock %}
-        <div></div>
-    </body>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="navbar-link" href="{% url 'admin:index' %}"><b style="color: #fff;">Admin</b></a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="{% url 'student:index' %}"><b style="color: #fff;">Student</b></a>
+                </li>
+                <li>
+                    <a class="navbar-link" href="{% url 'teacher_app:index' %}"><b style="color: #fff;">Teacher</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background">
+        <ul class="flex-container">
+            <li class="flex-item">
+                <div class="card">
+                    <img src="{% static "images/c1.png" %}" alt="Avatar" style="width:100%">
+                    <div class="container1">
+                        <p>The Lend-A-Hand India team with the Indian Actor Nana Patekar.</p>
+                    </div>
+                </div>
+
+            </li>
+            <li class="flex-item">
+                <div class="card">
+                    <img src="{% static "images/c2.png" %}" alt="Avatar" style="width:100%">
+                    <div class="container1">
+                        <p>CREATING OPPORTUNITIES FOR LIVELIHOOD<br> DREAMS WITHIN SCHOOL TIME TABLE(S) Multi Skill Foundation Course</p>
+                    </div>
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="card">
+                    <img src="{% static "images/c3.png" %}" alt="Avatar" style="width:100%">
+                    <div class="container1">
+                        <p>Lend A Hand India is working across 24 states/<br>UTs coverin 10,000+schools and 1 million+ students.</p>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Mision and Vision</h1>
+            <p class="lead">
+                Lend-A-Hand India's mission is to make a difference in the lives of the poor through self help.
+                <br>
+                By partnering with grassroots non-profit organizations, community groups, and local governments, we create better access to education, vocational training, career development, employment and entrepreneurial opportunities. Our goal is to help the poor realize their full potential to meet their aspirations for a better life.
+            </p>
+          </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">People</h1>
+            <p class="lead">
+                <hr><h3><b>Co-founders</b></h3><br>
+                <b>Sunanda Mane, Co-founder & President</b><br>
+                Sunanda (Ashoka Fellow 2011) has been working in the development sector for more than a decade. She has held positions as State Director, Program Director, and Consultant in national and international organizations such as CARE, Society for Service to Voluntary Agencies, Management Resources Inc., UNDP, and the World Bank. Sunanda has traveled extensively in India and South and Central Asia.
+                <br><hr>
+                <b>Raj Gilda, Co-founder & Director (Strategy and Development)</b><br>
+                Raj Gilda is a banker turned social entrepreneur. He is co-Founder of Lend A Hand India, an NGO focused on providing vocational education in secondary schools in India. Raj's journey in the world of skilling began as a son of a small Kirana (grocery) store owner as an "intern' to his father since he was 9 years old with him teaching the invaluable skills right from sweeping the floor to managing the cash to handling the customers. The same trend continued with Raj selling life insurance policies to partly pay for his studies during electronics engineering student days with University of Pune. Based on his own life experiences, Raj has been instrumental in launching an innovative internship program for higher secondary government school students placing them with small and micro-enterprises across 4 states covering 10,000+ students. He has worked across Asia, Europe and North America in the fields of education, banking, insurance, and information technology. Prior to leaving corporate sector in 2011 to focus full time on Lend A Hand India, he spent ten years in New York working with Citibank and Deloitte Consulting. Raj was appointed by Gov of India as a General Body Member of National Skill Development Agency (NSDA) from 2014-17. He was also selected by the UK Government, as a Chevening Gurukul Scholar (2012) at the London School of Economics. Raj is an Electronics Engineer from the University of Pune, a CFA, and holds an MBA from the University of Texas at Austin.
+                <br><br>Prashant Gupta<br><br>Pooja Gupta<br><br>Nirmal Juthani
+            </p>
+          </div>
+        </div>
+
+        <!-- Site footer -->
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6>About</h6>
+                <p class="text-justify">
+                        
+                    Lend-A-Hand India is a non-profit venture launched in 2003 by young professionals based in New York. With Program Headquarters in Pune (India), it focuses on issues related to youth. Its programs provide vocational training, career development, employment, and entrepreneurial opportunities to young boys and girls in rural and urban communities.
+                </p>
+              </div>
+
+              <div class="col-xs-6 col-md-3">
+                <h6>Categories</h6>
+                <ul class="footer-links">
+                  <li><a href="http://www.lend-a-hand-india.org/awards-and-recognition.php">Rewards & Recognition</a></li>
+                  
+                </ul>
+              </div>
+
+              <div class="col-xs-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                  <li><a href="http://www.lend-a-hand-india.org/about.php">About Us</a></li>
+                  <li><a href="http://www.lend-a-hand-india.org/help.php">Get Involved</a></li>
+                  <li><a href="http://www.lend-a-hand-india.org/programs.php">Programs</a></li>
+                  <li><a href="http://www.lend-a-hand-india.org/write.php">Contact Us</a></li>
+                  <li><a href="http://www.lend-a-hand-india.org/donate.php">Donate</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+    </div> <!-- End of background -->
+    
+
+
+    {% block body_block %} {% endblock %}
+</body>
+
 </html>
