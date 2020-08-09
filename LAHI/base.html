@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}// Django to identify the file
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="{% static "css/base.css" %}" />
+        <title>Base</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <p class="navbar-brand">Lend-A-Hand India</p>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a
+                            class="navbar-link"
+                            href="{% url 'student:register' %}"
+                            >Register</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="navbar-link"
+                            href="{% url 'student:login' %}"
+                            >Login</a
+                        >
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="">Learn!!</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 style="text-align: center; font-size: 50px; text-decoration-color: #3b5998">Student!!!</h1>
+        </div>
+        {% block body_block %} {% endblock %}
+        <footer class="site-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  
+                  <p class="text-justify">
+  
+                    Despite being world’s youngest country in terms of demographic dividend, India has only 2% of the workforce skilled compared with 96% in South Korea, 45% in China, 50-55% in USA & 74% in Germany. All these years, we focussed on building Higher Education and very little did we think of enhancing the Employability Quotient (EQ) and produce skilled manpower through skill training Interventions.
+
+                    Indian Education sector has seen rapid growth in nos. of Institutions and students over last few decades. As per UGC report, in 1950-51 there were approx. 750 colleges affiliated to 30 universities, which has grown to over 727 universities, 35000 colleges & 13000 standalone Institutions in 2014-15 and counting.
+                    
+                    Regardless of the tremendous growth, higher education has not proved too efficient to make youths of the country employable as per need of the employer due to low Skill Quotient (SQ).
+                  </p>
+                </div>
+  
+                <div class="col-xs-6 col-md-3">
+                 <p class="text-justify">Skill based learning focuses on increasing employability through series of inputs to:
+
+                    Equip students with appropriate hands-on skills which helps them to be job- ready.
+                    Core focus on job role based skills leads to comprehensive specialisation, thereby increasing efficacy of the candidate.
+                    Skill Training interventions raises confidence, improves productivity & competency of an individual through focussed outcome based learning.
+                    
+                    In 2014, Skill Development started getting booster from the Govt. under the visionary leadership of our Hon’ble Prime Minister, Shri. Narendra Modi-he encouraged Skill India Mission and also formed Ministry of Skill Development & Entrepreneurship Skill (MSDE) to coordinate all skill development activities, capacity & technical/ vocational training framework building, assessments framework. The Ministry is dedicated to skill 400 million workforce by 2022.</p>
+                  <ul class="footer-links">
+                    
+  
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+          </footer>
+        <div></div>
+    </body>
+</html>
