@@ -8,20 +8,20 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 from twilio.rest import Client
 
-# def link(request):
-#     if request.method == 'POST':
-#         link_url = request.POST.get('link_url')
-#         account_sid = 'ACeabc92d0d1275b9c8a37a2d873cbbe2b' 
-#         auth_token = 'a594ee70638acb5269afb6dafc09a3a2' 
-#         client = Client(account_sid, auth_token) 
-#         message = client.messages.create( 
-#                                   from_='whatsapp:+14155238886',  
-#                                   body=link_url,   
-#                                   to='whatsapp:+919877479110' 
-#                               )
-#         print(message.sid)
-#     else:
-#         return render(request, 'teacher_app/message.html')
+def link(request):
+    if request.method == 'POST':
+        # link_url = request.POST.get('link_url')
+        account_sid = 'ACeabc92d0d1275b9c8a37a2d873cbbe2b' 
+        auth_token = 'a594ee70638acb5269afb6dafc09a3a2' 
+        client = Client(account_sid, auth_token) 
+        message = client.messages.create( 
+                                  from_='whatsapp:+14155238886',  
+                                  body='Welcome To LAHI',   
+                                  to='whatsapp:+919877479110' 
+                              )
+        print(message.sid)
+    else:
+        return render(request, 'teacher_app/message.html')
 
 
 
