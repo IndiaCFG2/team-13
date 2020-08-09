@@ -6,6 +6,21 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 # from teacher_app.forms import teacher_content_form
 # Create your views here.
+from twilio.rest import Client
+
+def link(request):
+    account_sid = 'ACeabc92d0d1275b9c8a37a2d873cbbe2b' 
+    auth_token = 'a594ee70638acb5269afb6dafc09a3a2' 
+    client = Client(account_sid, auth_token) 
+    message = client.messages.create( 
+                              from_='whatsapp:+14155238886',  
+                              body='sdfgbn',     
+                              to='whatsapp:+919877479110' 
+                          )
+    print(message.sid)
+ 
+ 
+ 
 
 
 def index(request):

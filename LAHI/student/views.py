@@ -44,7 +44,7 @@ def register(request):
         user_form = UserForm_student()
         profile_form = UserProfileInfoForm_student()
 
-    return render(request, 'student/register.html', {'user_form': user_form, 'profile_form': profile_form, 'registered': registered})
+    return render(request, 'student/registers.html', {'user_form': user_form, 'profile_form': profile_form, 'registered': registered})
 
 
 def user_login(request):
