@@ -15,15 +15,3 @@ Hoping for a good competiton ahead.
 Hi guys, I am Arpit Saini
 College: Punjab Engineering College, Chandigarh
 Branch: ECE
-email: arpit.saini0005@gmail.com
-Phone: 9877479110
-
-Hello guys, I am Nikitha K studying in National Institute of Engineering, Mysore
-Branch: Information Science
-email: nikitha.kashimata@gmail.com
-Phone: 9611380233
-
-Hello guys,I am Hitha M V studying in Sri Jayachamarajendra college of Engineering, Mysore
-Branch:Computer Science
-email:hithagowder@gmail.com
-Phone:7892592020
